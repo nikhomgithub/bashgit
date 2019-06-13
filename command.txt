@@ -49,6 +49,17 @@ killall firefox mean kill running firefox program
 exit mean close terminal
 ^d mean close terminal
 
+echo $PATH mean to display path
+/home/nikhom/anaconda3/bin:/home/nikhom/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+if we want to play game 
+(base) nikhom@nikhom-X441UA:/usr/games$ sol
+
+newvar=1234 mean temporary set variable value of newvar
+unset newvar mean delete valuable newvar
+
+
+/home/nikhom/.bashrc mean file auto run with shell
+
 
 ..User
 sudo mean run as superuserdo temporary
