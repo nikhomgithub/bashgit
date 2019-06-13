@@ -1,0 +1,144 @@
+https://www.youtube.com/watch?v=oxuRxtrO2Ag
+
+..Basic
+/ mean root (top object in linux)
+~ mean /home/nikhom
+$ mean standard user
+cd mean go to home
+cd ~ mean go to home
+cd .. mean go back one step
+pwd mean show present working directory
+ls mean list
+-l mean long name
+-a mean all file/folder (including hidden ones)
+tab key mean auto complete/show file/folder name
+\ mean ignore space in file/folder name etc. $ls Bash\Script\
+file mean to show folder/file information 
+locate mean to find location of file/folder
+sudo updatedb mean to update database of linux so can use locate command
+which mean to find location of command
+arrow up key mean to see previous command 
+whatis cal mean to see help of command information
+apropos time mean to see command about time
+man cal to see detail of cal command 
+
+..Tree in liux
+(base) nikhom@nikhom-X441UA:/$ cd /
+(base) nikhom@nikhom-X441UA:/$ ls
+bin    etc             lib         media  root  srv       usr
+boot   home            lib32       mnt    run   swapfile  var
+cdrom  initrd.img      lib64       opt    sbin  sys       vmlinuz
+dev    initrd.img.old  lost+found  proc   snap  tmp       vmlinuz.old
+
+
+..File and Folder
+mkdir dirname mean to create directory
+touch existingfile mean to update the date that we touch file
+touch newfile mean to create file
+cp file file.bak mean to copy file to a new file
+mv file1 file2 mean cut file1 and past as file2 
+rm file1 mean cut file1 (no trash bin, becareful)
+* mean wildcard=all
+a* mean wildard start with a
+rm -r dir1 mean to remove directory dir1 and everything inside
+rmdir * mean delete empty folder only
+redirection >> > / nano cat mean to use output from command to be a file
+watch free -h mean to see memory usage (non stop)
+^c mean kill the command go back to $ 
+killall firefox mean kill running firefox program 
+exit mean close terminal
+^d mean close terminal
+
+
+..User
+sudo mean run as superuserdo temporary
+sudo -s mean run as rootuser permanently # 
+exit mean turnback to standard user $
+su - cindy mean login as cindy user (need cindy password)
+users mean to see who is logging in (in case of server computer many user loggin in)
+id mean to see your account info in etc file
+
+..File Permission
+$ls -l
+total 1
+drwxrwxrwx 26 root   root   4096 May 29 11:09 anaconda3
+d rwx(user=7) rwx(group=7) rwx(everyone=7)
+r=4 (read)
+w=2 (write)
+x=1 (execute)
+rwx=4+2+1=7 
+r-x=4+0+1=5 
+rw-=4+2+0=6
+
+chmod -R 777 . mean change every file in this folder to be rwx by me, group and everyone
+chmod 755 mean me rwx, group rx, everyone rx  
+655 mean for folder normally (can see folder)
+755 mean for file normally (can execute)
+
+open terminal
+
+(base) nikhom@nikhom-X441UA:~$ ls
+ai                 development       HomeWork  Pictures  snap
+anaconda3          Documents         Music     Public    Templates
+basicpandas.ipynb  Downloads         newps     pyimage   Untitled.ipynb
+Desktop            examples.desktop  Personal  pyimage2  Videos
+(base) nikhom@nikhom-X441UA:~$ cd ..
+(base) nikhom@nikhom-X441UA:/home$ cd ..
+(base) nikhom@nikhom-X441UA:/$ pwd
+/
+(base) nikhom@nikhom-X441UA:/$ cd
+(base) nikhom@nikhom-X441UA:~$ pwd
+/home/nikhom
+(base) nikhom@nikhom-X441UA:~$ 
+
+
+(base) nikhom@nikhom-X441UA:~$ ls
+ai                 development       HomeWork  Pictures  snap
+anaconda3          Documents         Music     Public    Templates
+basicpandas.ipynb  Downloads         newps     pyimage   Untitled.ipynb
+Desktop            examples.desktop  Personal  pyimage2  Videos
+(base) nikhom@nikhom-X441UA:~$ 
+
+(base) nikhom@nikhom-X441UA:~$ ls -l
+total 88
+drwxr-xr-x  2 nikhom nikhom 4096 Jun  5 18:10 ai
+drwxrwxrwx 26 root   root   4096 May 29 11:09 anaconda3
+-rw-r--r--  1 nikhom nikhom  625 Jun  1 14:37 basicpandas.ipynb
+
+(base) nikhom@nikhom-X441UA:~$ 
+
+(base) nikhom@nikhom-X441UA:~$ ls -a
+.                  Documents           .pam_environment
+..                 Downloads           Personal
+ai                 examples.desktop    Pictures
+
+(base) nikhom@nikhom-X441UA:~$ ls Bash\Script\
+
+(base) nikhom@nikhom-X441UA:~/Pictures$ ls
+ beach                                    
+(base) nikhom@nikhom-X441UA:~/Pictures$ file beach
+beach: PNG image data, 350 x 233, 8-bit/color RGB, non-interlaced
+(base) nikhom@nikhom-X441UA:~$ file Documents
+Documents: directory
+
+(base) nikhom@nikhom-X441UA:~$ locate beach
+/home/nikhom/pyimage/Books/Practical Python and OpenCV, 3rd Edition/code/images/beach.png
+
+(base) nikhom@nikhom-X441UA:~$ sudo updatedb
+[sudo] password for nikhom: 
+
+(base) nikhom@nikhom-X441UA:~$ which cal
+/usr/bin/cal
+(base) nikhom@nikhom-X441UA:~$ cal
+     June 2019        
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30      
+
+(base) nikhom@nikhom-X441UA:~$ whatis cal
+cal (1)              - displays a calendar and the date of Easter
+

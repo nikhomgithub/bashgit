@@ -1,0 +1,118 @@
+echo "# bashgit" >> README.md
+git init  mean create .git folder
+git status mean to see status of file in .git
+git add . mean to add all changed file in .git
+git add README.md
+git commit -m "first commit"
+
+shit :wq mean get out of the git program when just use commit with no -m
+
+git remote add origin https://github.com/nikhomgithub/bashgit.git
+git push -u origin master //-u mean ...........
+
+git log --oneline mean to see id and history of commit 
+
+git checkout id mean to go back in time to (just) see code/file in that commit
+git checkout master mean to come back to master(current & main) version of commit
+
+git revert id mean to undone whaterver in that commit and recommit it again
+
+git reset id mean to go back in time in that commit and delete all commit after that from .git
+
+branch is when work on different file by other and after done branch can be merged with the master file
+
+git branch fileB mean create a branch to work on fileB
+git checkoug -b fileB mean create branch fileB and go to branch fileB at the same time
+
+git branch -a mean to see all branch in .git
+
+git checkout fileB mean go to branch fileB and work on that
+git add .
+git commit -m "update fileB" //mean commit in branch fileB
+
+git checkout master mean come back to master
+git branch -D fielB mean delete branch fileB
+
+git checkout master mean come back to master
+git merge fileB mean merge branch fileB to master (even master has change it is ok, no conflict because different file)
+
+conflict when work master and branch work on the same file after branchout
+got merge fileB 
+//Show conflict file and we need to correct conflict and
+git add .
+git commit 
+shift :wq
+
+
+//git hub
+echo "# bashgit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git push https://github.com/nikhomgithub/bashgit.git master
+
+after change file push again 
+git add .
+git commit -m "second commit"
+git push https://github.com/nikhomgithub/bashgit.git master
+
+
+to clone respo mean we want to copy project from respo into our empty folder 
+git clone https://github.com/nikhomgithub/bashgit.git // we git remote orgin from git hub
+after clone we can change file
+git add .
+git commit -m "second version"
+git remote -v mean to check remote origin 
+https://github.com/nikhomgithub/bashgit.git (fetch) 
+https://github.com/nikhomgithub/bashgit.git (push) 
+
+git push origin master mean push back to respo
+
+.. work with many people
+we are working with team on master at our PC and 
+after finish first master 
+we push onto github respo 
+
+someone else might clone respo to their pc and edit master/create branch
+and push back to respo with master/branch 
+
+we want to change something in file we pull back to merge with our master in PC
+git pull origin master mean to merge respo into our pc
+
+then we create branch 
+git checkout -b fileB
+git add .
+git commit -m "fileB"     
+git push origin fileB mean will push to github respo as branch "fileB"
+
+so at github we have to send  "compare and pull request" merge branch into master at github 
+
+our boss will check conflict and "merge pull request" our branch to master.
+
+conclue
+Mr.A (assignee) do master and push 
+Someone (assignee) might clone master and change master/branch 
+Mr.A pull master from github to his PC to create a branch
+Mr.A push branch to github and send "compare and pull request" to boss (reviewer)
+(remember not to merge that branch in Mr.A's PC , boss must check and merge at github)
+Boss check and "merge pull request" on github
+new at github Master is updated 
+
+
+/// work in open source on github
+from brad github
+Fork brad respo to our gighub as our respo
+clone respo to our PC
+
+git clone https//.......
+
+update file in our PC
+git add .
+git commit -m "our change"
+git push origin master mean this is on our respo
+
+click "new pull request"
+"create pull request" + commnet
+Brad will check and merge if he want
+
+
