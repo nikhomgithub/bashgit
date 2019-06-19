@@ -15,7 +15,13 @@ git log --oneline mean to see id and history of commit
 git checkout id mean to go back in time to (just) see code/file in that commit
 git checkout master mean to come back to master(current & main) version of commit
 
+if we want to change in the past use 
 git revert id mean to undone whaterver in that commit and recommit it again
+you can change or undone what you commit in this one ,
+after that need to git add .
+git commit again
+and it will become the latest version
+
 
 git reset id mean to go back in time in that commit and delete all commit after that from .git
 
@@ -41,7 +47,7 @@ got merge fileB
 //Show conflict file and we need to correct conflict and
 git add .
 git commit 
-shift :wq
+ctrl + x
 
 
 //git hub
