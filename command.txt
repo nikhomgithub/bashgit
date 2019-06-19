@@ -65,7 +65,7 @@ unset newvar mean delete valuable newvar
 sudo mean run as superuserdo temporary
 sudo -s mean run as rootuser permanently # 
 exit mean turnback to standard user $
-su - cindy mean login as cindy user (need cindy password)
+su cindy mean login as cindy user (need cindy password)
 users mean to see who is logging in (in case of server computer many user loggin in)
 id mean to see your account info in etc file
 
