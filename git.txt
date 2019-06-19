@@ -50,43 +50,53 @@ git commit
 ctrl + x
 
 
-//git hub
+//Work with git hub
+//====================================================
+.. work with many people
+we are working with team on master at our PC and 
+after finish first master 
+we push onto github respo master 
+
 echo "# bashgit" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git push https://github.com/nikhomgithub/bashgit.git master
 
-after change file push again 
-git add .
-git commit -m "second commit"
-git push https://github.com/nikhomgithub/bashgit.git master
 
-
-to clone respo mean we want to copy project from respo into our empty folder 
+//for new user who want to work in this project, at first need to clone project 
+//to clone respo mean we want to copy project from respo into our empty folder 
 git clone https://github.com/nikhomgithub/bashgit.git // we git remote orgin from git hub
-after clone we can change file
+
+//but new user better crete a branch first and edit project file
+
+git branch mybranch
+git checkout mybranch 
+//edit file in project
 git add .
 git commit -m "second version"
 git remote -v mean to check remote origin 
 https://github.com/nikhomgithub/bashgit.git (fetch) 
 https://github.com/nikhomgithub/bashgit.git (push) 
 
-git push origin master mean push back to respo
+git push origin mybranch mean push back to respo as a branch
+got to github to create pull request to boos
+boss check and merge pull request to master at github!!!!!!
 
-.. work with many people
-we are working with team on master at our PC and 
-after finish first master 
-we push onto github respo 
+everythink will become master 
 
-someone else might clone respo to their pc and edit master/create branch
+someone else might clone/pull respo to their pc and edit master/create branch
 and push back to respo with master/branch 
 
 we want to change something in file we pull back to merge with our master in PC
+
 git pull origin master mean to merge respo into our pc
 
 then we create branch 
 git checkout -b fileB
+
+edit file again
+
 git add .
 git commit -m "fileB"     
 git push origin fileB mean will push to github respo as branch "fileB"
