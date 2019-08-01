@@ -225,7 +225,14 @@ pipe:
 mean redirect from output to input 
 
 ls | head -3   mean ls 1 0 head-3 mean get output of ls and as input of head -3ls we can use and filter in linux 
-                 
+
+ls | sort -r  mean ls 1 0 sort-r mean get ls output and take to be sorted in revers
+                
+&& operator:
+============
+prog1 && prog2 mena if prog1 is run success(true)  start to run prog2 
+
+ls > result.txt && echo "complete" mean if we save list in file result.txt successful then echo "complete"
 
 
 
