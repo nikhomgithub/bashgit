@@ -249,6 +249,7 @@ sudo apt-get update mean to update the system of linux
 sudo apt-get upgrade mean to upgrade all software in computer which is take long long time
 sudo apt-get install software mean to install a software from package manager 
 sudo apt-cache search software mean to sear for a software that we want which some time there are so many similar software
+cat /etc/apt/sources.list mean the file that keep all server that we load software from 
 
 
 
