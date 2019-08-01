@@ -196,6 +196,8 @@ echo "hello world" mean just print output to console
 
 pipe and redirection
 ====================
+redirection:
+------------
 standard input/output such file,keyword,network
 standard error mean output to show what error happen in bashshell 
 
@@ -209,7 +211,17 @@ echo "hello world" 1> new.txt  mean echo out to new.txt (create new.txt with tex
 echo "OK" > new.txt mean it will overwrite on new.txt and text inside is just "ok"
 echo "OK2" > new.txt mean it will append "ok2" after "ok"
 
+ls -alh new.txt >>listoutput mean we take result of ls and save in to listoutput file
+ls -alh xxxxx  2>>error  mean we take error result of ls and save in to errfile
 
+mail -s "this is subject" nikhom < new.txt
+mean send email with subject "this is subject" to nikhom by have input from new.txt
+
+echo "ok bot">output mean redirect to file output
+cat <output mean show what in file output redirect to screen
+
+pipe:
+----
 
 
 
