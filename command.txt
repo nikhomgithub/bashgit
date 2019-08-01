@@ -189,6 +189,23 @@ we will know who is using cpu and how it perform
 
 sudo netstat -tuplin mean to see network port that are connected but need to run as sudo to see more detail
 
+nana a.txt mean you can edit file with nano editor program
+vi a.txt mean a program to edit txt as well
+
+echo "hello world" mean just print output to console 
+
+pipe and redirection
+====================
+standard input/output such file,keyword,network
+standard error mean output to show what error happen in bashshell 
+
+channel in bashshel
+STDIN -->ch= 0
+STDOUT -->ch=  1
+STDERR -->ch=  2
+
+
+
 
 
 
