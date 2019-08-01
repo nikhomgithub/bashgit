@@ -1,26 +1,37 @@
 https://www.youtube.com/watch?v=oxuRxtrO2Ag
+https://www.youtube.com/watch?v=Lbh8Bh_SEzU&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK&index=4
+
+(base) nikhom@nikhom-X441UA:~$ 
+       username@macinename
 
 ..Basic
-/ mean root (top object in linux)
-~ mean /home/nikhom
+/ mean root (top object in linux)  $cd /  //go to root
+~ mean /home/nikhom   $cd ~  //go to home
 $ mean standard user
 cd mean go to home
 cd ~ mean go to home
 cd .. mean go back one step
+
 pwd mean show present working directory
-ls mean list
+ls mean list  
+ls / //to show whate list inside root
+
 -l mean long name
 -a mean all file/folder (including hidden ones)
 tab key mean auto complete/show file/folder name
 \ mean ignore space in file/folder name etc. $ls Bash\Script\
+
+clear //to clear screen
+
 file mean to show folder/file information 
 locate mean to find location of file/folder
 sudo updatedb mean to update database of linux so can use locate command
 which mean to find location of command
 arrow up key mean to see previous command 
+
 whatis cal mean to see help of command information
 apropos time mean to see command about time
-man cal to see detail of cal command 
+man cal to see detail of cal command //man mv or man cp or man rm or man touch or man cat
 
 ..Tree in liux
 (base) nikhom@nikhom-X441UA:/$ cd /
@@ -35,6 +46,13 @@ dev    initrd.img.old  lost+found  proc   snap  tmp       vmlinuz.old
 mkdir dirname mean to create directory
 touch existingfile mean to update the date that we touch file
 touch newfile mean to create file
+
+cat filename mean to see what content is inside file
+head filename mean to see first 10 rows content in file
+tail filename mean to see last 10 rows contente in file
+tail -f filename mean to see last 10 rows conetent in file and stay there if any update you will see change in real time
+ctrl C mean to exit from realtime mode
+
 cp file file.bak mean to copy file to a new file
 mv file1 file2 mean cut file1 and past as file2 
 rm file1 mean cut file1 (no trash bin, becareful)
@@ -48,6 +66,13 @@ watch free -h mean to see memory usage (non stop)
 killall firefox mean kill running firefox program 
 exit mean close terminal
 ^d mean close terminal
+
+shutdown -h now mean shutdown computer now
+shutdown -r +60 mean shutdown and restart a computer in 60 minute
+
+
+
+ln -s a.txt alink  mean to create shortcut name alink to file a.txt , use in case that u create a file and want every one to have a shortcut to access this file 
 
 echo $PATH mean to display path
 /home/nikhom/anaconda3/bin:/home/nikhom/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
