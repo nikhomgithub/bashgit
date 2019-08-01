@@ -69,6 +69,9 @@ exit mean close terminal
 
 shutdown -h now mean shutdown computer now
 shutdown -r +60 mean shutdown and restart a computer in 60 minute
+poweroff  mean shutdown power
+init 0 mean shutdown power
+init 6 mean reboot computer
 
 
 
