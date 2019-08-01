@@ -50,7 +50,7 @@ touch newfile mean to create file
 cat filename mean to see what content is inside file
 head filename mean to see first 10 rows content in file
 tail filename mean to see last 10 rows contente in file
-tail -f filename mean to see last 10 rows conetent in file and stay there if any update you will see change in real time
+tail -f filename mean (this is very helpful) to see last 10 rows conetent in file and stay there if any update you will see change in real time
 ctrl C mean to exit from realtime mode
 
 cp file file.bak mean to copy file to a new file
