@@ -181,3 +181,18 @@ Su Mo Tu We Th Fr Sa
 (base) nikhom@nikhom-X441UA:~$ whatis cal
 cal (1)              - displays a calendar and the date of Easter
 
+who mean to see who is loggin in 
+w mean to see who is loggin in with more info 
+
+top mean to see realtime cpu status just like process manager in window 
+we will know who is using cpu and how it perform
+
+sudo netstat -tuplin mean to see network port that are connected but need to run as sudo to see more detail
+
+
+
+
+
+
+
+
