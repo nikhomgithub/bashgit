@@ -227,13 +227,25 @@ mean redirect from output to input
 ls | head -3   mean ls 1 0 head-3 mean get output of ls and as input of head -3ls we can use and filter in linux 
 
 ls | sort -r  mean ls 1 0 sort-r mean get ls output and take to be sorted in revers
-                
+
+ls | wc  mean ls 1 0 wc  mean get ls output and take to wc to count newline, word, byte  
+
+   
 && operator:
 ============
 prog1 && prog2 mena if prog1 is run success(true)  start to run prog2 
 
 ls > result.txt && echo "complete" mean if we save list in file result.txt successful then echo "complete"
 
+grep:
+====
+is to searh a word in file
+grep test a.txt mean search "test" in file a.txt 
+
+
+package management
+==================
+sudo apt-get update mean to update the system
 
 
 
