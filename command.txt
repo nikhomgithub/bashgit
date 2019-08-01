@@ -204,6 +204,13 @@ STDIN -->ch= 0
 STDOUT -->ch=  1
 STDERR -->ch=  2
 
+if we want to echo a text to be save in another file (not to show on screen as stdout)
+echo "hello world" 1> new.txt  mean echo out to new.txt (create new.txt with text "hello world" inside)
+echo "OK" > new.txt mean it will overwrite on new.txt and text inside is just "ok"
+echo "OK2" > new.txt mean it will append "ok2" after "ok"
+
+
+
 
 
 
