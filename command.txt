@@ -325,6 +325,8 @@ usermod -U vijittra mean to lock/unlock that user from access (by put in/out "!"
 userdel vijittra mean to remove user account it will delet from etc/passwd, etc/shadow/ etc/group
                  but /home/vijitra still exist  mean we need rm -rf /home/vijitttra myself 
 
+newusers mean to create many user account from file (see more in man) 
+
 
 
 
