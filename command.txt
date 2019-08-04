@@ -337,9 +337,19 @@ kernel will run many process one by one in sequence (parent and child alway inte
 process has many attribute 
 PID meand process id 
 owner name/id of process
-parent process to interact with child until child exit(return end-signal to parent, after that parent will die)(every process has parent except init)
+
+init<-->process<-->process<-->.....
+
+parent process to interact with child until child exit
+(return end-signal to parent, after that kernel will kill child-process)
+(every process has parent except init)
+
 kernal signal mean to control each process 
-ni priority to run of process -20 is the most important (run first) such as init process and 20 is the most unimportant(run last) process
+ni priority to run of process -20 is the most important (run first) such as init process 
+and 20 is the most unimportant(run last) process
+
+15. process signal
+==================
 
 
 
