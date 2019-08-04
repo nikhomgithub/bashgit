@@ -255,6 +255,11 @@ sudo apt-get remove software to remove software from machine
 sudo apt-get-repository ppa:software mean to directly install software from uncertified source (not from package manager)
   must be careful
 
+sudo apt-get install htop
+//htop is a program that show current process
+
+sudo apt-get update 
+//to update package 
 
 
 
