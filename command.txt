@@ -338,7 +338,7 @@ process has many attribute
 PID meand process id 
 owner name/id of process
 
-init<-->process<-->process<-->.....
+init<-kernal->process<-kernel->process<-kernel->.....
 
 parent process to interact with child until child exit
 (return end-signal to parent, after that kernel will kill child-process)
@@ -350,6 +350,20 @@ and 20 is the most unimportant(run last) process
 
 15. process signal
 ==================
+there are many kind of signal send by kernel or user to process
+
+man 7 signal mean to see all signal 
+
+such as 
+kill 15 2776 mean user send a SIGTERM(15) to end process id=2776 to process to end
+or 
+killall fireforx mean to end firefox program 
+
+or 
+ctrl C mean send a signal to interupt the running process
+
+or 
+sudo pkill -u dave mean to end every process running by user dave
 
 
 
