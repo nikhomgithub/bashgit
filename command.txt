@@ -59,6 +59,7 @@ rm file1 mean cut file1 (no trash bin, becareful)
 * mean wildcard=all
 a* mean wildard start with a
 rm -r dir1 mean to remove directory dir1 and everything inside
+rm -rf dir mean to remove directory dir1 and everyting inside 
 rmdir * mean delete empty folder only
 redirection >> > / nano cat mean to use output from command to be a file
 watch free -h mean to see memory usage (non stop)
@@ -210,7 +211,7 @@ STDERR -->ch=  2
 if we want to echo a text to be save in another file (not to show on screen as stdout)
 echo "hello world" 1> new.txt  mean echo out to new.txt (create new.txt with text "hello world" inside)
 echo "OK" > new.txt mean it will overwrite on new.txt and text inside is just "ok"
-echo "OK2" > new.txt mean it will append "ok2" after "ok"
+echo "OK2" >> new.txt mean it will append "ok2" after "ok"
 
 ls -alh new.txt >>listoutput mean we take result of ls and save in to listoutput file
 ls -alh xxxxx  2>>error  mean we take error result of ls and save in to errfile
@@ -261,6 +262,29 @@ sudo apt-get install htop
 
 sudo apt-get update 
 //to update package 
+
+Access Control
+==============
+root acout is the admin user
+drwx d
+d=directory
+l=link 
+one user can be long to many group 
+htop mean to see what command running
+
+top mean to see what command is running
+ PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                           
+ 3782 nikhom    20   0 1952040 322280 119632 S  54.3  4.0   4:13.25 chrome                                                                            
+ 1325 nikhom    20   0 3613956 183040  71912 S  26.2  2.3   1:47.71 gnome-shell    
+
+which chrome mean to see where is command is
+
+id mean to see your user detail
+uid=1000(nikhom) gid=1000(nikhom) groups=1000(nikhom),4(adm),20(dialout),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare),127(kvm)
+
+w mean to see who is logging in the machine
+===============
+
 
 
 
