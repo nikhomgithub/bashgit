@@ -284,7 +284,15 @@ uid=1000(nikhom) gid=1000(nikhom) groups=1000(nikhom),4(adm),20(dialout),24(cdro
 
 w mean to see who is logging in the machine
 ===============
+User Account Management
+/etc/passwd mean file that contain user password
 
+tail /etc/passwd mean check last user acount 's password
+nikhom:x:1000:1000:nikhom,,,:/home/nikhom:/bin/bash   mean there are many user behind system 
+/etc/shadow mean a file that contain hased password 
+
+/bin/false mean some file non-login system such as virtual machine system program, 
+/usr/sbin/nologin mean some file no need to login any one can control its file rwx such as tcp-socket, network (not good for security)
 
 
 
