@@ -92,6 +92,7 @@ unset newvar mean delete valuable newvar
 ..User
 sudo mean run as superuserdo temporary
 sudo -s mean run as rootuser permanently # 
+sudo -i mean run as rootuser permanently #
 exit mean turnback to standard user $
 su cindy mean login as cindy user (need cindy password)
 users mean to see who is logging in (in case of server computer many user loggin in)
@@ -189,7 +190,7 @@ we will know who is using cpu and how it perform
 
 sudo netstat -tuplin mean to see network port that are connected but need to run as sudo to see more detail
 
-nana a.txt mean you can edit file with nano editor program
+nano a.txt mean you can edit file with nano editor program
 vi a.txt mean a program to edit txt as well
 
 echo "hello world" mean just print output to console 
