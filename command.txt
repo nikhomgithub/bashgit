@@ -426,8 +426,14 @@ sudo nano /etc/crontab mean to access system crontab which has only one, we can 
 crontab -e - u nikhom mean root can edit every crontab of nikhom
 
 
-28.bash scrhpt
+28.bash script
 ==============
+bash is a language for small job (not too big) for system such as to backup file 
+
+29.bash basic
+=============
+
+
 
 
 
