@@ -29,6 +29,16 @@ sudo updatedb mean to update database of linux so can use locate command
 which mean to find location of command
 arrow up key mean to see previous command 
 
+grep "test" a.txt mean a command to search word "test" in a.txt file 
+of grep 
+-w  mean non-case sensitive
+-i  mean not case sensitive
+-n  mean show line number of that word
+-B 4 mean to see four line before that search-word 
+-A 4 mean to see four line after that search-word 
+-C 2 mean to see the line +2 line before and -2 line after 
+grep "test" ./* mean to see word "test" in everyfile in this directory 
+
 whatis cal mean to see help of command information
 apropos time mean to see command about time
 man cal to see detail of cal command //man mv or man cp or man rm or man touch or man cat
@@ -290,9 +300,20 @@ User Account Management
 tail /etc/passwd mean check last user acount 's password
 nikhom:x:1000:1000:nikhom,,,:/home/nikhom:/bin/bash   mean there are many user behind system 
 /etc/shadow mean a file that contain hased password 
+gdm:*:17937:0:99999:7:::  mean gdm user has password of anything register on 17937 and valid 99999 days need 7 to re-register after expire
 
-/bin/false mean some file non-login system such as virtual machine system program, 
+/bin/false mean some file non-login system such as virtual machine system program, (not good for security)
+
 /usr/sbin/nologin mean some file no need to login any one can control its file rwx such as tcp-socket, network (not good for security)
+
+tail /etc/group mean show group and member of each group
+sambashare:x:126:nikhom
+
+useradd -m -d /home/vijittra -u 1002 -g 1003 -s /bin/bash vijittra  mean to add a new user with home diriectory & shell program and determin user id and user password (by default it will autoid) 
+examples.desktop mean the desktoppage that auto create after add a new user
+
+userdel 
+
 
 
 
