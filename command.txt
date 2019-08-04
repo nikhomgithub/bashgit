@@ -328,6 +328,19 @@ userdel vijittra mean to remove user account it will delet from etc/passwd, etc/
 newusers mean to create many user account from file (see more in man) 
 
 
+14 . process of linux
+=======================
+process mean command that happen and run computer
+such as init (first command run by linux system)
+
+kernel will run many process one by one in sequence (parent and child alway interact by sending signal back and force)
+process has many attribute 
+PID meand process id 
+owner name/id of process
+parent process to interact with child until child exit(return end-signal to parent, after that parent will die)(every process has parent except init)
+kernal signal mean to control each process 
+ni priority to run of process -20 is the most important (run first) such as init process and 20 is the most unimportant(run last) process
+
 
 
 
