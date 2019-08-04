@@ -366,6 +366,83 @@ or
 sudo pkill -u dave mean to end every process running by user dave
 
 
+21 File System
+==============
+/bin mean folder that basic command live , it is binary and all program just make a link to command in bin
+
+/boot mean kernal loader, kernal file in boot
+
+/dev mean hardisk memory is hear and it is sda(partition0) sda1 (partition1) sda2(partition2) ...... 
+
+/etc mean configeration file from all program 
+
+/home mean folder for all user
+
+/lib mean dll(dynamic link library) in window any program can use this library in this folder
+
+/media mean all cdrom, usb devise will be mount in this media file all user can use media (auto mounted) by ubuntu
+
+/opt mean optional software u can install a software install here 
+
+/proc mean state of process running on system , kernal temporarly make these state files  for runnig processes 
+
+/sbin mean system binary, place whare keep binary file of system, 
+
+/tmp mean temporary place to keep file such as unfinished-downloaded file, it will be empty after reboot 
+
+/usr mean place that keep command of user software 
+/usr/sbin mean place for admin command
+
+/var mean varient to keep varient such as var/log keep log of varient
+
+21.file type
+============
+directory mean drwx 
+link mena lrwx
+file  mean -rwx
+block mean brwx such as sda(harddisk) mean memory that can store infor
+charactor mean file that keep infomation of keybord, mouse and kernel read it from there
+socket mean file that is tempory file happen during 2 process communicated
+
+22.Work Schedule
+================
+crontab -l mean to check ther is any schedule script to be run by a user
+crontab -e mean set up schedule 
+
+m h  dom mon dow   command mean patter of your schedule script
+m mean minute
+h mean hour
+dom mean day of month * mean every day
+moy mean month of yer * mea every month
+dow mean day of week 
+command mean command run by shell sh (can be change)
+
+
+* * * * * echo "Good" >> /home/nikhom/test/a.txt mean to every minute, every day, every month to write "Good" into a.txt
+15 10 1,2,4,5 * 5 mean run at 10:15 on day 1,2,4,5 of month and on every friday in every month
+
+sudo nano /etc/crontab mean to access system crontab which has only one, we can specify user as well 
+
+crontab -e - u nikhom mean root can edit every crontab of nikhom
+
+
+28.bash scrhpt
+==============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
