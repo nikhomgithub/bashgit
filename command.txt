@@ -432,6 +432,10 @@ bash is a language for small job (not too big) for system such as to backup file
 
 29.bash basic
 =============
+stdin  = 0
+stdout = 1
+stderr = 2
+
 echo "Hello" mean stdout on bash terminal
 echo "Hello" >> hello.txt mean stdout by append at hello.txt file
 echo "Hello" > hello.txt mean stdout by overwrite at hello.txt file 
@@ -440,11 +444,12 @@ wc -l < b.txt mean word count of how manyline from input of b.txt (content of b.
 or
 cat b.txt | wc -l && echo"done" mean stdout b.txt and stdin to wc -l after that echo out
 
+ls aa 2> c.txt mean send stderror to c.txt because ls aa will give error
 
 
-VARIABLE
-=========
-env mean to see all variable
+30.Variables && Quoting
+====================
+env mean to see all variable (System valuable is in Captital)
 
 To see command director in $PATH
 Bash Shell will check command in $PATH >director> to be exectuted 
@@ -462,13 +467,89 @@ create valuable
 A=1
 echo $A
 1
+echo "Good ${A}"
+Good 1
 
 unset A mean to delete variable
 
+echo "Good `wc -l</etc/group` done"
+Good 68 done
+
+line=`wc -l</etc/group`
+68
+
+31.How bash work
+================
+.sh mean shell script type
+
+# mean comment
+which bash 
+/bin/bash
+
+after run shell script (.sh) it will return a value (between 0-255)
+0=no problem (actually number meaning up to you)
+
+create a.sh
+
+echo "AAA"
+exit 1 mean exit this .sh and return 1 (not use when run source)
+
+to run first
+chmod -R 777 a.sh
+./a.sh 
+or we can use
+bash a.sh
+or we can use
+source a.sh  mean this will run .sh and get variable in script to use in bash 
+
+AAA mean run result 
+
+32.Argument
+===========
+$# mean number of argument that script has
+$0 mean that file name
+$1... up to you
 
 
 
 
+47.tee watch&log
+================
+you can see log file with 2 terminal
+
+terminal 1
+touch mylog.log
+echo $(date)>>mylog.log 
+echo $(date)>>mylog.log 
+...
+
+terminal 2
+tail -f mylog.log
+Mon Aug 5 09:52:25 +07 2019
+Mon Aug 5 09:52:25 +07 2019
+...
+date | tee mylog.log mean overwrite date on file mylog.log and show on screen
+date | tee -a mylog.log mean append date on file mylog.log and show on screen
+
+38.lsof
+=======
+lsof | head
+COMMAND    PID  TID             USER   FD      TYPE             DEVICE  SIZE/OFF       NODE NAME
+systemd      1                  root  cwd   unknown                                         /proc/1/cwd (readlink: Permission denied)
+mean show command running seed COMMAND, PID, NAME
+
+
+$ netstat -tupln
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name 
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           1854/chrome --type= 
+
+
+51 VPN
+======
+virtual private network (encrypt tunnel)
+http ISP can see what and page and info that you visit
+https ISP can see what websit you visit but not detal
+vpn ISP can not see only you visit vpn
 
 
 
