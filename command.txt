@@ -552,7 +552,10 @@ https ISP can see what websit you visit but not detal
 vpn ISP can not see only you visit vpn
 
 
-
+check cpu core
+==============
+grep processor /proc/cpuinfo | wc -l
+4
 
 
 
