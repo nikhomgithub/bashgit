@@ -432,14 +432,38 @@ bash is a language for small job (not too big) for system such as to backup file
 
 29.bash basic
 =============
+echo "Hello" mean stdout on bash terminal
+echo "Hello" >> hello.txt mean stdout by append at hello.txt file
+echo "Hello" > hello.txt mean stdout by overwrite at hello.txt file 
+
+wc -l < b.txt mean word count of how manyline from input of b.txt (content of b.txt)
+or
+cat b.txt | wc -l && echo"done" mean stdout b.txt and stdin to wc -l after that echo out
 
 
 
+VARIABLE
+=========
+env mean to see all variable
 
+To see command director in $PATH
+Bash Shell will check command in $PATH >director> to be exectuted 
 
+echo $PATH
+/home/nikhom/anaconda3/bin:/home/nikhom/anaconda3/condabin:/home/nikhom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nikhom/development/flutter/bin:/home/nikhom/development/flutter/bin/cache/dart-sdk/bin:/usr/local/go/bin:/home/nikhom/development/flutter/bin:/home/nikhom/development/flutter/bin/cache/dart-sdk/bin:/usr/local/go/bin
 
+$USER
+nikhom
 
+$HOME
+/home/nikhom
 
+create valuable
+A=1
+echo $A
+1
+
+unset A mean to delete variable
 
 
 
