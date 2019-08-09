@@ -507,31 +507,23 @@ line=`wc -l</etc/group`
 normally we can use bash shell on terminal
 but we can write script file (program for linux to run)
 
-touch testscript.sh      mean .sh = conventional way for script file (optional)
-
-in testscript.sh
-#!/bin/bash              mean to ask /bin/bash to run script
-echo "hello world"
-exit 0                   mean exit with echo "hello world" last command
-
-to change file mode to run script
-chmod 700 testscript.sh
-
-to run the script use ./
-./testscript.sh
-
-.sh mean script type
-
+file.sh = conventional way for script file (optional)
 after run shell script (.sh) it will return a value (between 0-255)
 0=no problem (actually number meaning up to you)
 
-create a.sh
+touch testscropt.sh
 
-echo "AAA"
-exit 1 mean exit this .sh and return 1 (not use when run source)
+#!/bin/bash              mean to ask /bin/bash to run script
+name="nikhom"
+age=40
+echo "hello world"
+exit 0                   mean exit with echo "hello world" last command
 
-to run first
-chmod -R 777 a.sh
+to change file mode to run script need x
+chmod 700 testscript.sh
+
+to run the script use 
+./testscript.sh
 
 bash a.sh
 or we can use
