@@ -523,21 +523,31 @@ to change file mode to run script need x
 chmod 700 testscript.sh
 
 to run the script use 
-./testscript.sh
-bash testscript.sh
-source testscript.sh  mean this will run .sh and get variable in script to use in bash 
+./testscript.sh   =  bash testscript.sh
+. testscript.sh   =  source testscript.sh  mean this will run .sh and get variable in script to use in bash 
 
 if use source after run script
 echo $name 
 nikhom     mean we still can use variable inside script on shell as well
 
-32.Argument
+32.bash Argument
 ===========
 $# mean number of argument that script has
 $0 mean that file name
 $1... up to you
 
+#!/bin/bash
+ourfilename=$0
+echo $ourfilename
 
+bash testscript.sh or ./testscript.sh     mean it run this file by /bin/bash
+
+source testscript.sh or . testscript.sh   mean pull the script in to shell and run by /bin/bash
+
+#!/bin/bash
+echo "Argumenst are ${1}, ${2}, ${3}"
+bash testscript.sh a b c     mean argument of testscript.sh = a , b, c
+Argumenst are a, b, c        mean rusult 
 
 
 47.tee watch&log
