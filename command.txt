@@ -457,7 +457,7 @@ bash is a language for small job (not too big) for system such as to backup file
 29.bash basic
 =============
 stdin  = 0
-stdout = 1
+stdout = 1   mean normally we use this
 stderr = 2
 
 echo "Hello" mean stdout on bash terminal
@@ -466,10 +466,10 @@ echo "Hello" > hello.txt mean stdout by overwrite at hello.txt file
 
 wc -l < b.txt mean word count of how manyline from input of b.txt (content of b.txt)
 or
-cat b.txt | wc -l && echo"done" mean stdout b.txt and stdin to wc -l after that echo out
+(cat b.txt | wc -l) && echo"done" mean both must be true it will complete
+(cat b.txt | wc -l) || echo"done" mean one of them can be true it will complete
 
 ls aa 2> c.txt mean send stderror to c.txt because ls aa will give error
-
 
 30.Variables && Quoting
 ====================
@@ -488,13 +488,13 @@ $HOME
 /home/nikhom
 
 create valuable
-A=1
-echo $A
+abc=1
+echo $abc
 1
-echo "Good ${A}"
+echo "Good ${abc}"   mean this is quote
 Good 1
 
-unset A mean to delete variable
+unset abc mean to delete variable
 
 echo "Good `wc -l</etc/group` done"
 Good 68 done
@@ -502,13 +502,25 @@ Good 68 done
 line=`wc -l</etc/group`
 68
 
-31.How bash work
-================
-.sh mean shell script type
+31.How script work
+======================
+normally we can use bash shell on terminal
+but we can write script file (program for linux to run)
 
-# mean comment
-which bash 
-/bin/bash
+touch testscript.sh      mean .sh = conventional way for script file (optional)
+
+in testscript.sh
+#!/bin/bash              mean to ask /bin/bash to run script
+echo "hello world"
+exit 0                   mean exit with echo "hello world" last command
+
+to change file mode to run script
+chmod 700 testscript.sh
+
+to run the script use ./
+./testscript.sh
+
+.sh mean script type
 
 after run shell script (.sh) it will return a value (between 0-255)
 0=no problem (actually number meaning up to you)
@@ -520,10 +532,10 @@ exit 1 mean exit this .sh and return 1 (not use when run source)
 
 to run first
 chmod -R 777 a.sh
-./a.sh 
-or we can use
+
 bash a.sh
 or we can use
+./a.sh 
 source a.sh  mean this will run .sh and get variable in script to use in bash 
 
 AAA mean run result 
