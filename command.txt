@@ -517,20 +517,19 @@ touch testscropt.sh
 name="nikhom"
 age=40
 echo "hello world"
-exit 0                   mean exit with echo "hello world" last command
+exit 0                   mean exit and close terminal
 
 to change file mode to run script need x
 chmod 700 testscript.sh
 
 to run the script use 
 ./testscript.sh
+bash testscript.sh
+source testscript.sh  mean this will run .sh and get variable in script to use in bash 
 
-bash a.sh
-or we can use
-./a.sh 
-source a.sh  mean this will run .sh and get variable in script to use in bash 
-
-AAA mean run result 
+if use source after run script
+echo $name 
+nikhom     mean we still can use variable inside script on shell as well
 
 32.Argument
 ===========
