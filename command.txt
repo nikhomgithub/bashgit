@@ -318,6 +318,7 @@ examples.desktop mean the desktoppage that auto create after add a new user
 
 passwd vijittra mean to set up password 
 
+usermod -L vijittra
 usermod -U vijittra mean to lock/unlock that user from access (by put in/out "!" infront of passwod in /etc/shadow)
 
 /etc/skel mean a file that contain desktop file of root 
