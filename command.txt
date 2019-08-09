@@ -51,17 +51,40 @@ boot   home            lib32       mnt    run   swapfile  var
 cdrom  initrd.img      lib64       opt    sbin  sys       vmlinuz
 dev    initrd.img.old  lost+found  proc   snap  tmp       vmlinuz.old
 
+/etc mean place for all config files of all application
+
+
 
 ..File and Folder
 mkdir dirname mean to create directory
 touch existingfile mean to update the date that we touch file
 touch newfile mean to create file
 
+less filename mean to see each page at a time
 cat filename mean to see what content is inside file
 head filename mean to see first 10 rows content in file
 tail filename mean to see last 10 rows contente in file
-tail -f filename mean (this is very helpful) to see last 10 rows conetent in file and stay there if any update you will see change in real time
+tail -f filename mean (this is very helpful) to see last 10 rows conetent in file and stay there if any update you will 
+see change in real time
 ctrl C mean to exit from realtime mode
+
+grep a ./* mean to search for "a" in file name or folder name of current directory
+greap "a" ./* mean to search for "a" in content of filename of this current directory and subdirectory
+
+
+system log file in /var/log (some are log files)
+================================================
+https://www.youtube.com/watch?v=oBc8aAn7QVc
+common log files
+boot.log (boot.msg) mean when system boot up 
+cron mean message from cron deamon
+dmesg mean hardware detection information 
+faillog mean fail authentication detection (intruder)
+firewalld mean message of firewall
+lastlog mean last time each user log in to system
+mail (maillog) mean each entry of mail deamon
+
+
 
 cp file file.bak mean to copy file to a new file
 mv file1 file2 mean cut file1 and past as file2 
