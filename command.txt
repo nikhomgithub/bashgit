@@ -390,37 +390,53 @@ or
 sudo pkill -u dave mean to end every process running by user dave
 
 
-21 File System
+20 File System
 ==============
-/bin mean folder that basic command live , it is binary and all program just make a link to command in bin
+conention way of folder in linux
 
-/boot mean kernal loader, kernal file in boot
+/bin mean (binary) for binary command file of all program  or just a link to binary command file (/usr/bin)
 
-/dev mean hardisk memory is hear and it is sda(partition0) sda1 (partition1) sda2(partition2) ...... 
+/boot mean kernal ,boot loader, kernal file in boot (file of linux)
 
-/etc mean configeration file from all program 
+/dev mean all devices such as hardisk memory (sda, sda1 (partition1), sda2(partition2) ...... 
 
-/home mean folder for all user
+/etc mean configeration file from all system/program if something do not work come here
 
-/lib mean dll(dynamic link library) in window any program can use this library in this folder
+/home mean folder for all users
 
-/media mean all cdrom, usb devise will be mount in this media file all user can use media (auto mounted) by ubuntu
+/lib mean dll(dynamic link library) in window any system program can use shared files in this folder
 
-/opt mean optional software u can install a software install here 
+/media mean all cdrom, usb devise, external harddrive will be auto-mounted (plug and play)
 
-/proc mean state of process running on system , kernal temporarly make these state files  for runnig processes 
+/opt mean optional software u can install a diy software here (not use so much)
 
-/sbin mean system binary, place whare keep binary file of system, 
+/proc mean direcotory of process state running on system, kernal temporarly create these folder for runnig processes 
+
+/sbin mean system binary file, place where keep binary file of system, 
 
 /tmp mean temporary place to keep file such as unfinished-downloaded file, it will be empty after reboot 
 
-/usr mean place that keep command of user software 
-/usr/sbin mean place for admin command
 
-/var mean varient to keep varient such as var/log keep log of varient
+
+/usr mean place that keep command of user software 
+/usr/bin mean place for program command
+/usr/sbin mean place for linux system command for admin 
+/usr/local mean software of each user
+/usr/share mean share file among user
+
+
+/var mean various to keep varient such as var/log keep log of varient
+
+
 
 21.file type
 ============
+- mean file
+l mean link file
+d mean directory
+b mean block file (such as usb, harddisk, cd-rom)
+c mean character file (mouse,keyboard)
+
 directory mean drwx 
 link mena lrwx
 file  mean -rwx
