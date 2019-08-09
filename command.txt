@@ -568,12 +568,17 @@ Argumenst are a, b, c        mean rusult
 
 47.tee watch&log
 ================
+real time monitor of program
+tee mean for split 2 outpub (result, log file
+
 you can see log file with 2 terminal
 
+Old way
+------
 terminal 1
 touch mylog.log
-echo $(date)>>mylog.log 
-echo $(date)>>mylog.log 
+date>>mylog.log 
+date>>mylog.log
 ...
 
 terminal 2
@@ -581,8 +586,26 @@ tail -f mylog.log
 Mon Aug 5 09:52:25 +07 2019
 Mon Aug 5 09:52:25 +07 2019
 ...
-date | tee mylog.log mean overwrite date on file mylog.log and show on screen
-date | tee -a mylog.log mean append date on file mylog.log and show on screen
+cat mylog.log mean to see all content in file 
+
+New way
+-------
+date | tee mylog.log       mean overwrite date on file mylog.log and show on screen
+Fri Aug  9 14:16:54 +07 2019
+date | tee mylog.log      
+Fri Aug  9 14:16:54 +07 2019
+date | tee mylog.log       
+Fri Aug  9 14:16:54 +07 2019
+
+date | tee -a mylog.log    mean -a = append date on file mylog.log and show on screen
+Fri Aug  9 14:16:54 +07 2019
+date | tee -a mylog.log  
+Fri Aug  9 14:16:54 +07 2019
+Fri Aug  9 14:16:54 +07 2019
+date | tee -a mylog.log   
+Fri Aug  9 14:16:54 +07 2019
+Fri Aug  9 14:16:54 +07 2019
+Fri Aug  9 14:16:54 +07 2019
 
 38.lsof
 =======
