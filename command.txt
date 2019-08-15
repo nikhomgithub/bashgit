@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=Lbh8Bh_SEzU&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrp
 / mean root (top object in linux)  $cd /  //go to root
 ~ mean /home/nikhom   $cd ~  //go to home
 $ mean standard user
+# mean root user
 cd mean go to home
 cd ~ mean go to home
 cd .. mean go back one step
