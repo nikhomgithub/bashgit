@@ -74,6 +74,13 @@ grep a ./* mean to search for "a" in file name or folder name of current directo
 greap "a" ./* mean to search for "a" in content of filename of this current directory and subdirectory
 
 
+deamon is backround service application 
+that run to support other program, some time it always run
+it's name will end with d , deamon 
+if your program go wrong, problem might happen in deamon, 
+you need to restart it
+
+
 system log file in /var/log (some are log files)
 ================================================
 https://www.youtube.com/watch?v=oBc8aAn7QVc
