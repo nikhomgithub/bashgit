@@ -27,8 +27,7 @@ clear //to clear screen
 file mean to show folder/file information 
 locate mean to find location of file/folder
 sudo updatedb mean to update database of linux so can use locate command
-which mean to find location of command
-arrow up key mean to see previous command 
+
 
 grep "test" a.txt mean a command to search word "test" in a.txt file 
 of grep 
@@ -40,6 +39,8 @@ of grep
 -C 2 mean to see the line +2 line before and -2 line after 
 grep "test" ./* mean to see word "test" in everyfile in this directory 
 
+which mean to find location of command
+arrow up key mean to see previous command 
 whatis cal mean to see help of command information
 apropos time mean to see command about time
 man cal to see detail of cal command //man mv or man cp or man rm or man touch or man cat
