@@ -85,7 +85,8 @@ system log file in /var/log (some are log files)
 ================================================
 https://www.youtube.com/watch?v=oBc8aAn7QVc
 common log files
-boot.log (boot.msg) mean when system boot up 
+
+boot.log (boot.msg) mean system-boot-up log 
 cron mean message from cron deamon
 dmesg mean hardware detection information 
 faillog mean fail authentication detection (intruder)
