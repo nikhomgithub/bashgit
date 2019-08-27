@@ -659,11 +659,17 @@ How to remove thing completely in linux
 
 Some time apt-get remove nginx can not remove all nginx dependency
 we need to user many command to remove all 1-3 (3 most important)
-
-1.sudo apt-get remove --purge nginx
-2.sudo apt-get --purge autoremove nginx
-3.sudo apt-get remove "^nginx.*"
+1.sudo apt-get remove --purge nginx*
+2.sudo apt-get remove "^nginx.*"
 
 
 
+==================
+lsb_release -a   mean to see current ubuntu version
+
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.3 LTS
+Release:	18.04
+Codename:	bionic
+nikhom@nikhom-X202E:~/n
 
