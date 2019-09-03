@@ -539,7 +539,7 @@ line=`wc -l</etc/group`
 31.How script work
 ======================
 normally we can use bash shell on terminal
-but we can write script file (program for linux to run)
+but we can save our bash command in script file (program for linux to run)
 
 file.sh = conventional way for script file (optional)
 after run shell script (.sh) it will return a value (between 0-255)
@@ -552,6 +552,7 @@ name="nikhom"
 age=40
 echo "hello world"
 exit 0                   mean exit and close terminal
+
 
 to change file mode to run script need x
 chmod 700 testscript.sh
@@ -566,6 +567,9 @@ nikhom     mean we still can use variable inside script on shell as well
 
 32.bash Argument
 ===========
+echo $0    //display current file name
+bash       //bash is current file name
+
 $# mean number of argument that script has
 $0 mean that file name
 $1... up to you
@@ -580,8 +584,34 @@ source testscript.sh or . testscript.sh   mean pull the script in to shell and r
 
 #!/bin/bash
 echo "Argumenst are ${1}, ${2}, ${3}"
-bash testscript.sh a b c     mean argument of testscript.sh = a , b, c
+
+$bash testscript.sh a b c     mean argument of testscript.sh = a , b, c
 Argumenst are a, b, c        mean rusult 
+
+
+35.$PATH in Bash
+================
+$echo $PATH    //this is where linux will look for command , start from 1st file (bin)
+/home/nikhom/anaconda3/bin:
+/home/nikhom/anaconda3/condabin:
+/home/nikhom/.local/bin:
+We can temporality add new bin by
+PATH=$PATH:/etc/some/bin (append)
+or 
+PATH=/etc/some/bin:$PATH (prepend)
+but we can put both lines in /home/nikhom/.bashrc , because it will run everytime open terminal
+
+export PATH is to export this varialble to other child bash
+(how to get a child bash)
+$    /origin bash        
+$bash   /enter child bash
+$    /now in child bash
+$exit   /leave child bash
+$    /now in origin bash again
+
+Actually PATH is in /etc/profile
+
+
 
 
 47.tee watch&log
