@@ -1,3 +1,14 @@
+check & kill pid on port
+$sudo -s
+$netstat -tln
+$lsof-i:15672
+$kill 1234
+
+======================================
+
+
+
+
 https://www.youtube.com/watch?v=oxuRxtrO2Ag
 https://www.youtube.com/watch?v=Lbh8Bh_SEzU&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK&index=4
 
